@@ -30,22 +30,32 @@
 
 ## Introduction
 
-**HTML** stands for **Hypertext Markup Language**
+- **HTML** stands for **Hypertext Markup Language**
+- Hypertext is special text, not regular text.
+- you can create links with text that you can interact with by clicking or hovering.
+- Markup refers to tags added to text to define structure or meaning.
+- Tags tells the browser how to display text (like headings, paragraphs, links ...etc).
+- Tags are used as instructions for formatting content.
+
+![HTML Skeleton](./assets/01-html-skeleton.jpg)
 
 ### About HTML
 
 - **HTML** stands for **Hypertext Markup Language**
 - **HTML** is used to create static web pages.
-- Text Editor is the software for **HTML** coding.
+- **HTML** is used to create skeleton of the webpage.
+- Text Editor (Notepad) is the software for **HTML** coding.
 - **HTML** file save with extension `.html`
 
 ### HTML coding
 
-**HTML** coding is a `Tag` based coding.
+- **HTML** coding is a `Tag` based coding.
+- Tags tells the browser how to display text (like headings, paragraphs, links ...etc).
+- Tags are used as instructions for formatting content.
 
 ### **HTML** Tags are two types
 
-1. **Container Tag** : It has start Tag & End Tag.
+1. **Container Tag** : It has startTag & endTag.
 2. **Empty Tag** : It doesn't have an end tag.
 
 - `Container Tag`
@@ -58,13 +68,12 @@
 - `Empty Tag`
 
   ```html
-  <img src="image.jpg" />
   <br />
   <hr />
   ```
 
-- Attributes are used to give extra information to the html element.
-- **HTML** elements tell the browser that how to display the content.
+- **HTML** elements define the structure and meaning of the content.
+- With the help of HTML elements, the browser understands how to display the content on the webpage.
 
 ### **HTML** document Structure
 
@@ -72,73 +81,80 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		Metadata elements
+		Metadata Elements
 	</head>
 	<body>
-		content of webpage
+		Content of Webpage
 	</body>
 </html>
 ```
 
 An **HTML** document consists of three parts :
 
-- **DOCTYPE**  
-  The **DOCTYPE** declaration tells the type/version of the HTML document to the browser.
+1. **DOCTYPE**  
+  - The **DOCTYPE** declaration tells the type/version of the HTML document to the browser.
 
-- **Head Part**  
-  Head tag is for **Browser reading** purpose.  
-  Here, we can mention `HTML` page configuration information.  
-  Here, we can store title, style sheets, scripts...etc.
+2. **Head Part**  
+  - Head tag is for **Browser reading** purpose.  
+  - Here, we can mention `HTML` page configuration information.  
+  - Here, we can store title, style sheets, scripts, metadata...etc.
 
-- **Body Part**  
-  Body tag is for **Client reading** purpose.  
-  Here, we can Display content of the webpage.
-  It contains text content, headings, paragraphs, links, tables, forms, images, audios, videos, ...etc.
+3. **Body Part**  
+  - Body tag is for **Client reading** purpose.  
+  - Here, we can Display content of the webpage.
+  - It contains text content, headings, paragraphs, links, tables, forms, images, audios, videos, ...etc.
 
 ### Element Syntax
 
-Element consist of a **start tag** and **end tag**.  
-we can put **content** between **start tag** and **end tag**.
+- Element consist of a **startTag** and **endTag**.  
+- we can put **content** between **startTag** and **endTag**.
 
 ```html
 <tag>Content</tag>
 ```
 
-### Attribute syntax
+```html
+<h1>I am Heading Tag</h1>
+```
 
+### Attribute syntax
 - Attributes are used to give extra information to the html element.
-- we must mention attributes only in **start** tag.
+- we must mention attributes only in **startTag**.
 
 ```html
 <tag attributeName="attributeValue">Content</tag>
 ```
 
+```html
+  <img src="https://avatars.githubusercontent.com/u/150348094?v=4" />
+ ```
+
 ### Uses of **HTML**
 
-- **Structuring web pages**  
-   we can define headings, paragraphs, and other content of a web page.
-- **Creating Hyperlinks**  
-   Hyperlink is used to navigate to other web resources or a specific element within the HTML document.
-- **Embedding**  
-   we can embed images, audios and videos in the HTML document.
+1. **Structuring web pages**  
+   - we can define headings, paragraphs, and other content of a web page.
+2. **Creating Hyperlinks**  
+   - Hyperlink is used to navigate to other web resources or a specific element within the HTML document.
+3. **Embedding**  
+   - we can embed images, audios and videos in the HTML document.
 
 ### Advantages & Disadvantages of **HTML**
 
-- we can create only Static Web pages with HTML alone.
+- we can create only Static Web pages (skeleton of the web page) with HTML alone.
 - By Combining HTML with CSS, we can create Responsive web pages.
 - By Combining HTML with JavaScript, we can create dynamic web pages.
 
 ### HTML version
 
-`HTML5` is the latest version of HTML.
-HTML5 is easier than HTML4 or Older versions.
+- `HTML5` is the latest version of HTML.
+- HTML5 is easier than HTML4 or Older versions.
 
-In HTML5 version, they added new features,
+- In HTML5 version, they added new features,
 
-- picture, audio and video elements
-  - `<picture>, <Audio>, <video>`
-- semantic elements
-  - `<header>, <nav>, <aside>, <main>, <footer>`
+  - picture, audio and video elements
+      - `<picture>, <audio>, <video>`
+  - semantic elements
+      - `<header>, <nav>, <aside>, <main>, <footer>`
 
 **`HTML5` Declaration** :
 
@@ -157,20 +173,18 @@ In HTML5 version, they added new features,
 
 ### **HTML** Tags are two types
 
-1. **Container Tag** : It has start Tag & End Tag.
-2. **Empty Tag** : It does not have an End tag.
+1. **Container Tag** : It has startTag & endTag.
+2. **Empty Tag** : It does not have an endTag.
 
 In general, HTML elements can be divided into two categories.
 
 1. Block-Level Elements
 2. Inline Elements
 
-### **Block-Level Elements**
+### Block-Level Elements
 
 - HTML Block-Level element occupies the entire horizontal space of its parent element.
 - HTML Block-Level element always start in a new line.
-
-`Example:`
 
 ```html
 <h1>Heading</h1>
@@ -186,13 +200,23 @@ In general, HTML elements can be divided into two categories.
 - containers
   - `header, nav, aside, main, section, article, div, footer`
 
-### **In-Line Elements**
+```html
+<body>
+   <h1>I am Heading 1</h1>
+   <p>I am Paragraph</p>
+  <div>
+     <h2>I am Heading 2</h2>
+  </div>
+</body>
+```
+
+### In-Line Elements
 
 - Inline element occupies content width only.
-- The HTML Inline elements do not start in a new line.
+- The HTML Inline elements do not start on a new line.
 
 ```html
-<p>I am <a href="http://www.google.com">Google</a> link</p>
+<p>I am <a href="https://www.google.com">Google</a> link</p>
 <p>I am <span class="my-style">Ande Praveen</span></p>
 ```
 
@@ -205,15 +229,9 @@ In general, HTML elements can be divided into two categories.
 - Text Styles
   - `span`
 - Text Format
-  - bold : `b`, `strong`
-  - italic :`i`, `em`
-  - Marking : `mark`
-  - underline : `u`, `ins`
-  - delete : `strike`, `del`, `s`
-  - sub script : `sub`
-  - super script : `sup`
-  - size : `big`, `small`
-  - create block : `blockquote`
+  - bold : `b`
+  - italic :`i`
+  - underline : `u`
 
 ### Nested **HTML**
 
@@ -278,7 +296,7 @@ The HTML `<br/>` element is a void element.
 
 The HTML `<hr/>` element inserts a horizontal line and helps to separate the content.
 
-```html
+```html index.html
 <h1>Heading</h1>
 <hr />
 
@@ -314,7 +332,7 @@ These container tags are used to divide smaller parts for understanding and appl
 6. **article**
 7. **footer**
 
-![Semantic vs Non-Semantic](./assets/01-Semantic-vs-non-semantic.png)
+![Semantic vs Non-Semantic](./assets/02-Semantic-vs-non-semantic.png)
 
 ```html
 <header>
@@ -808,7 +826,7 @@ It is a container for all the other HTML elements.
 - We can embed external javascript file with `src` attribute in `script` Tag.
 
 ```html
-<script src="external-javascript.js"></script>
+<script src="./external-javascript.js"></script>
 ```
 
 ### style
@@ -819,6 +837,7 @@ The HTML **style** element contains style information for an HTML document.
 ```html index.html
 <!DOCTYPE html>
 <html>
+<title>Document</title>
 	<head>
 		<style>
 			h1 {
@@ -928,7 +947,7 @@ The HTML `target` Attribute specifies where to open the linked web resource.
 - **\_parent** : It opens the document in a parent frame.
 
 ```html
-<a href="http://www.google.com" target="_blank">Google</a>
+<a href="https://www.google.com" target="_blank">Google</a>
 ```
 
 ### href
@@ -937,7 +956,7 @@ The HTML **href** attribute is the most important attribute of the HTML anchor e
 The value of the HTML `href` attribute is URL/path of the page where the link goes to.
 
 ```html
-<a href="http://www.google.com" target="_blank">Google</a>
+<a href="https://www.google.com" target="_blank">Google</a>
 ```
 
 ## Boolean Attributes
