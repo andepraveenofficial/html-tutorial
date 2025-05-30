@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 
 <html>
+	<head>
+		<title>datalist</title>
+	</head>
 
-<head>
-<title>datalist</title>
-</head>
+	<body>
+		<center><h2>form</h2></center>
+		<hr />
+		<hr />
 
-<body>
+		<center><h2>datalist</h2></center>
+		<hr />
 
-<center><h2>form</h2></center>
-<hr><hr>
+		<center><h2>datalist options</h2></center>
+		<hr />
 
-<center><h2>datalist</h2></center>
-<hr>
+		<form>
+			<!--It is for searching purpose-->
+			<input list="ui_technologies" />
+			<datalist id="ui_technologies">
+				<option>html</option>
+				<option>css</option>
+				<option>js</option>
+				<option>jQuery</option>
+				<option>bootstrap</option>
+				<option>angular</option>
+			</datalist>
+			<hr />
 
-<center><h2>datalist options</h2></center>
-<hr>
+			<label for="ice-cream-choice">Choose a flavor:</label>
+			<input
+				list="ice-cream-flavors"
+				id="ice-cream-choice"
+				name="ice-cream-choice"
+			/>
 
-
-<form>
-
-<!--It is for searching purpose-->
-<input list="ui_technologies">
-<datalist id="ui_technologies">
-<option>html</option>
-<option>css</option>
-<option>js</option>
-<option>jQuery</option>
-<option>bootstrap</option>
-<option>angular</option>
-</datalist>
-<hr>
-
-<label for="ice-cream-choice">Choose a flavor:</label>
-<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
-
-<datalist id="ice-cream-flavors">
-  <option value="Chocolate"></option>
-    <option value="Coconut">
-    <option value="Mint">
-    <option value="Strawberry">
-    <option value="Vanilla">
-</datalist>
-
-</form>
-<hr>
-
-</body>
-
+			<datalist id="ice-cream-flavors">
+				<option value="Chocolate"></option>
+				<option value="Coconut"></option>
+				<option value="Mint"></option>
+				<option value="Strawberry"></option>
+				<option value="Vanilla"></option>
+			</datalist>
+		</form>
+		<hr />
+	</body>
 </html>

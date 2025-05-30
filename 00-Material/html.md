@@ -623,7 +623,7 @@ tfoot => tr , td
 
 It contains different types of form elements:
 
-- input
+- textbox
 - label
 - select
 - textarea
@@ -684,10 +684,11 @@ Different types of inputs:
 - It is created by using an HTML input element with the `type` attribute value is set to `radio`.
 
 ```html
-<input type="radio" id="genderMale" value="Male" name="gender" />
-<label for="genderMale">Male</label>
-<input type="radio" id="genderFemale" value="Female" name="gender" />
-<label for="genderFemale">Female</label>
+<input type="radio" id="male" value="male" name="gender" />
+<label for="male">Male</label>
+
+<input type="radio" id="female" value="female" name="gender" />
+<label for="female">Female</label>
 ```
 
 3. **Dropdown**
@@ -710,8 +711,8 @@ Different types of inputs:
 <select>
 	<option value="option-1">option1</option>
 	<option value="option-2">option2</option>
-	<option value="option-3" selected>option3</option>
 	<!--set Default Selection-->
+	<option value="option-3" selected>option3</option>
 	<option value="option-4">option4</option>
 </select>
 ```
@@ -879,13 +880,8 @@ Different types of inputs:
 
 - id
 - class
-- style
-- href
-- src
-- alt
 - target
-- type
-- checked
+- href
 
 ### id
 
@@ -933,13 +929,13 @@ The HTML `target` Attribute specifies where to open the linked web resource.
 <a href="https://www.google.com" target="_blank">Google</a>
 ```
 
-## Boolean Attributes
+### Boolean Attributes
 
 - required
 - selected
 - controls
 
-### **required**
+#### **required**
 
 - The HTML `required` attribute is a boolean attribute.
 - If present, it specifies that an input field must be filled out before submitting the form.
