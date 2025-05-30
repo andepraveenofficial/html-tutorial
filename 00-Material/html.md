@@ -15,11 +15,9 @@
 - List
 - Table
 - Forms
-- Canvas
 - Important Elements
 - Attributes
 - Tricky Questions
-- General Information
 
 </details>
 
@@ -91,22 +89,25 @@
 
 An **HTML** document consists of three parts :
 
-1. **DOCTYPE**  
-  - The **DOCTYPE** declaration tells the type/version of the HTML document to the browser.
+1. **DOCTYPE**
 
-2. **Head Part**  
-  - Head tag is for **Browser reading** purpose.  
-  - Here, we can mention `HTML` page configuration information.  
-  - Here, we can store title, style sheets, scripts, metadata...etc.
+- The **DOCTYPE** declaration tells the type/version of the HTML document to the browser.
 
-3. **Body Part**  
-  - Body tag is for **Client reading** purpose.  
-  - Here, we can Display content of the webpage.
-  - It contains text content, headings, paragraphs, links, tables, forms, images, audios, videos, ...etc.
+2. **Head Part**
+
+- Head tag is for **Browser reading** purpose.
+- Here, we can mention `HTML` page configuration information.
+- Here, we can store title, style sheets, scripts, metadata...etc.
+
+3. **Body Part**
+
+- Body tag is for **Client reading** purpose.
+- Here, we can Display content of the webpage.
+- It contains text content, headings, paragraphs, links, tables, forms, images, audios, videos, ...etc.
 
 ### Element Syntax
 
-- Element consist of a **startTag** and **endTag**.  
+- Element consist of a **startTag** and **endTag**.
 - we can put **content** between **startTag** and **endTag**.
 
 ```html
@@ -118,6 +119,7 @@ An **HTML** document consists of three parts :
 ```
 
 ### Attribute syntax
+
 - Attributes are used to give extra information to the html element.
 - we must mention attributes only in **startTag**.
 
@@ -126,16 +128,16 @@ An **HTML** document consists of three parts :
 ```
 
 ```html
-  <img src="https://avatars.githubusercontent.com/u/150348094?v=4" />
- ```
+<img src="https://avatars.githubusercontent.com/u/150348094?v=4" />
+```
 
 ### Uses of **HTML**
 
-1. **Structuring web pages**  
+1. **Structuring web pages**
    - we can define headings, paragraphs, and other content of a web page.
-2. **Creating Hyperlinks**  
+2. **Creating Hyperlinks**
    - Hyperlink is used to navigate to other web resources or a specific element within the HTML document.
-3. **Embedding**  
+3. **Embedding**
    - we can embed images, audios and videos in the HTML document.
 
 ### Advantages & Disadvantages of **HTML**
@@ -152,9 +154,9 @@ An **HTML** document consists of three parts :
 - In HTML5 version, they added new features,
 
   - picture, audio and video elements
-      - `<picture>, <audio>, <video>`
+    - `<picture>, <audio>, <video>`
   - semantic elements
-      - `<header>, <nav>, <aside>, <main>, <footer>`
+    - `<header>, <nav>, <aside>, <main>, <footer>`
 
 **`HTML5` Declaration** :
 
@@ -202,11 +204,11 @@ In general, HTML elements can be divided into two categories.
 
 ```html
 <body>
-   <h1>I am Heading 1</h1>
-   <p>I am Paragraph</p>
-  <div>
-     <h2>I am Heading 2</h2>
-  </div>
+	<h1>I am Heading 1</h1>
+	<p>I am Paragraph</p>
+	<div>
+		<h2>I am Heading 2</h2>
+	</div>
 </body>
 ```
 
@@ -253,10 +255,17 @@ The HTML element can be placed inside **another** HTML element is called Nested 
 
 ## Structuring
 
+1. Heading Elements
+2. paragraph Element
+3. Line Break
+4. Horizontal Line
+5. Containers
+
 ### Heading Elements
 
-HTML defines six levels of headings.  
-`h1, h2, h3, h4, h5, h6`
+- HTML defines six levels of headings.
+
+  - `h1, h2, h3, h4, h5, h6`
 
 - The HTML `h1` element defines the most important heading of an HTML document.
 - The HTML `h6` element defines the least important heading of an HTML document.
@@ -272,7 +281,7 @@ HTML defines six levels of headings.
 
 ### Paragraph Element
 
-The HTML Paragraph Element defines the paragraph of an HTML document.
+- The HTML Paragraph Element defines the paragraph of an HTML document.
 
 ```html
 <p>I am Paragraph</p>
@@ -280,8 +289,8 @@ The HTML Paragraph Element defines the paragraph of an HTML document.
 
 ### Line Break
 
-The HTML `<br/>` Element helps to break the text and continue it in the next line.  
-The HTML `<br/>` element is a void element.
+- The HTML `<br/>` Element helps to break the text and continue it in the next line.
+- The HTML `<br/>` element is a void element.
 
 ```html
 <p>
@@ -296,33 +305,39 @@ The HTML `<br/>` element is a void element.
 
 The HTML `<hr/>` element inserts a horizontal line and helps to separate the content.
 
-```html index.html
+```html
 <h1>Heading</h1>
 <hr />
 
 <p>I am Paragraph</p>
 ```
 
-### Semantic Tags
+### Containers
 
-**Semantic** elements have the meaning.  
-Semantic Tags are useful for client reading purpose, browser reading purpose and also Developer reading purpose.
-The HTML semantic elements describe the **meaning** of content in between the start tag and end tag.
+- The Container Elements are used to wrap a group of elements and apply CSS styles to many elements at once.
+- These container tags are used to divide smaller parts for understanding and applying css easily.
 
-The Container Elements are used to wrap a group of elements and apply CSS styles to many elements at once.
-These container tags are used to divide smaller parts for understanding and applying css easily.
+#### 1. Semantic Tags
 
-**uses of Semantic HTML tags:**
+- **Semantic** elements have the meaning.
+- Semantic Tags are useful for client reading purpose, browser reading purpose and also Developer reading purpose.
+- The HTML semantic elements describe the **meaning** of content in between the startTag and endTag.
 
-- **Accessibility**  
-  This is because screen readers and browsers can understand the code better.
+- **uses of Semantic HTML tags:**
+
+1. **Accessibility**
+
+- This is because screen readers and browsers can understand the code better.
   We can use shortcuts to move different parts within the webpage.
 
-- **Search Engine Optimization**  
-  It improves the website Search Engine Optimization Rankings which increases the number of people that visit our webpage.
+2. **Search Engine Optimization**
 
-- **Easy to Understand**  
-   It makes our code more readable and easier to understand.
+- It improves the website Search Engine Optimization Rankings which increases the number of people that visit our webpage.
+
+3. **Easy to Understand**
+   - It makes our code more readable and easier to understand.
+
+- Semantic Tags :
 
 1. **header**
 2. **nav** -> navbar
@@ -336,7 +351,7 @@ These container tags are used to divide smaller parts for understanding and appl
 
 ```html
 <header>
-	<h2>heading</h2>
+	<h1>heading</h1>
 </header>
 
 <nav>
@@ -364,11 +379,12 @@ These container tags are used to divide smaller parts for understanding and appl
 
 ### Non-Semantic Tags
 
-Non-semantic elements don't have the meaning.  
-They can contain anything.  
-Examples: `div` and `span`.
+- Non-semantic elements don't have the meaning.
+- They can contain anything.
+- Examples: `div` and `span`.
 
 - **div** container tag => divided & use css
+- `<div>` is used to group a set of elements.
 
 ```html
 <div>
@@ -376,10 +392,9 @@ Examples: `div` and `span`.
 </div>
 ```
 
-- **span**
-  `span` is an In-Line Element.  
-  This span element used to apply some css styles for a particular character , word , group of words.  
-  content comes side by side.
+- **span** is an In-Line Element.
+- This span element used to apply some css styles for a particular character, word , group of words.
+- content comes side by side.
 
 ```html
 <p>I am <span class="my-style">Ande Praveen</span></p>
@@ -387,12 +402,10 @@ Examples: `div` and `span`.
 
 ### details
 
-We can create accordion by using `<details/>`
-
-It has two states:
-
-- open: We can see the additional information.
-- close: We can't see the additional information. We can see only the summary.
+- We can create accordion by using **details** tag.
+- It has two states:
+  1. open: We can see the additional information.
+  2. close: We can't see the additional information. We can see only the summary.
 
 ```html
 <details>
@@ -410,16 +423,16 @@ It has two states:
 
 ### Hyperlinks
 
-**Hyperlink** is used to navigate to other web resources or a specific element within the HTML document.
-We can create hyperlinks to **text** as well as **images**, **buttons**, ...etc.
+- **Hyperlink** is used to navigate to other web resources or a specific element within the HTML document.
+- We can create hyperlinks to **text** as well as **images**, **buttons**, ...etc.
 
-we can create Hyperlink with HTML **anchor** element.
+- we can create Hyperlink with HTML **anchor** element.
 
 ```html
-<a href="link"> Link Text </a>
+<a href="link">Text</a>
 <a href="link"> <button>Click Here</button> </a>
 <a href="link"> <img src="image.png" /> </a>
-<a href="#myHeading">Heading</a>
+<a href="#myHeading">Goto Heading</a>
 ```
 
 </details>
@@ -431,18 +444,16 @@ we can create Hyperlink with HTML **anchor** element.
 
 ## Embedding
 
-### HTML media elements
-
-HTML media elements are used to present the **audios** and **videos**.
+- HTML media elements are used to present the **pictures**, **audios** and **videos**.
 
 ### Display Image
 
-We can display images on the web page using the HTML img element.  
-`src` attribute tells the path to the image.  
-`alt` attribute gives an alternate text for the image.
+- We can display images on the web page using the HTML `img` element.
+- `src` attribute tells the path to the image.
+- `alt` attribute gives an alternate text for the image.
 
 ```html
-<img src="IMAGE_URL" alt="image" />
+<img src="IMAGE_URL" alt="I am image" />
 ```
 
 ### picture
@@ -453,10 +464,8 @@ It can contain zero or more source elements and one HTML img element.
 ```html
 <picture>
 	<source media="(min-width:650px)" srcset="image-1" />
-
 	<source media="(min-width:465px)" srcset="image-2" />
-
-	<img src="image-3" alt="historical places" />
+	<img src="image-3" alt="I am image" />
 </picture>
 ```
 
@@ -465,8 +474,8 @@ It can contain zero or more source elements and one HTML img element.
 
 ### video
 
-We can insert a video to the HTML document using video element.
-The HTML `controls` attribute is used to set controls in HTML `video` element. It is a boolean attribute. When **controls** attribute is present, it specifies that video controls should be displayed.
+- We can insert a video to the HTML document using video element.
+- The HTML `controls` attribute is used to set controls in HTML `video` element. It is a boolean attribute. When **controls** attribute is present, it specifies that video controls should be displayed.
 
 Video controls include:
 
@@ -484,14 +493,14 @@ Video controls include:
 </video>
 ```
 
-The HTML `source` element defines the media resource for the HTML video element.
+- The HTML `source` element defines the media resource for the HTML video element.
 
 - The HTML `src` attribute specifies the URL/path of the media resource (e.g. video).
 - The HTML `type` attribute specifies the type/format of the media resource(e.g. video/mp4)
 
 ### audio
 
-The HTML audio element represents a sound or audio stream. It is used to play an audio file on an HTML document.
+- The HTML audio element represents a sound or audio stream. It is used to play an audio file on an HTML document.
 
 ```html
 <audio controls>
@@ -501,9 +510,9 @@ The HTML audio element represents a sound or audio stream. It is used to play an
 </audio>
 ```
 
-The HTML source element specifies multiple alternative media resources for HTML img elements or for media elements (audio, video, etc.).
-It is commonly used to give the same media content in multiple file formats for providing compatibility across different browsers.
-The HTML `src` attribute of the source element specifies the URL/path of the media resource.
+- The HTML source element specifies multiple alternative media resources for HTML picture element or for media elements (audio, video, etc.).
+- It is commonly used to give the same media content in multiple file formats for providing compatibility across different browsers.
+- The HTML `src` attribute of the source element specifies the URL/path of the media resource.
 
 ### iframe
 
@@ -535,9 +544,9 @@ There are mainly two types of lists in HTML
 
 ### Ordered List
 
-It is created using the `ol` element.  
- It is a collection of related items.  
- Ordered list follows the Sequence Order.
+- It is created using the `ol` element.
+- It is a collection of related items.
+- Ordered list follows the Sequence Order.
 
 ```html
 <ol>
@@ -551,9 +560,9 @@ It is created using the `ol` element.
 
 ### Unordered List
 
-It is created using the `ul` element.  
- It is a collection of related items.  
- Unordered list does not follow any Sequence Order.
+- It is created using the `ul` element.
+- It is a collection of related items.
+- Unordered list does not follow any Sequence Order.
 
 ```html
 <ul>
@@ -583,8 +592,9 @@ tbody => tr , td
 tfoot => tr , td
 ```
 
-`table = table rows + table data`
-`tr -> table row, td -> table data`
+- `table = table rows + table data`
+- `tr -> table row`
+- `td -> table data`
 
 ```html
 <table>
@@ -622,9 +632,9 @@ tfoot => tr , td
 
 ## Form
 
-The HTML `form` element can be used to create HTML Forms.  
-form elements create interactive controls to accept the data from the user.
-The Form is used to collect the user inputs.
+- The HTML `form` element can be used to create HTML Forms.
+- form elements create interactive controls to accept the data from the user.
+- The Form is used to collect the user inputs.
 
 It contains different types of form elements:
 
@@ -633,8 +643,6 @@ It contains different types of form elements:
 - select
 - textarea
 - button
-- fieldset
-- legend
 
 ### **Form** Example code
 
@@ -665,15 +673,18 @@ Different types of inputs:
 - password
 - checkbox
 - radio
+- dropdown
 
-**Textbox & Password**
+1. **Textbox & Password**
 
 ```html
 <input type="text" placeholder="text box" />
 <input type="password" placeholder="password box" />
 ```
 
-**Checkbox**
+### select
+
+1. **Checkbox**
 
 - It is used when one or more than one option to be selected out of several available options.
 - It is also created by using the HTML input element with the type attribute value is set to `checkbox`.
@@ -683,7 +694,7 @@ Different types of inputs:
 <label for="myCheckbox">Checkbox</label>
 ```
 
-**Radio Buttons**
+2. **Radio Buttons**
 
 - It is used when only one option to be selected out of several available options.
 - It is created by using an HTML input element with the `type` attribute value is set to `radio`.
@@ -695,10 +706,12 @@ Different types of inputs:
 <label for="genderFemale">Female</label>
 ```
 
-**Dropdown**  
-we can choose any one option.  
-The HTML `select` element is used to create a drop-down list of options.
-The HTML `option` element should be inside the HTML `select` element for defining options in the drop-down list.
+3. **Dropdown**
+
+- It is also like radio element.
+- we can choose any one option.
+- The HTML `select` element is used to create a drop-down list of options.
+- The HTML `option` element should be inside the HTML `select` element for defining options in the drop-down list.
 
 ```html
 <select>
@@ -729,61 +742,17 @@ The HTML `option` element should be inside the HTML `select` element for definin
 </select>
 ```
 
-**Textarea**
+### Textarea
 
 ```html
 <textarea rows="8" cols="55"></textarea
 ><!--cols means number of characters-->
 ```
 
-</details>
+### button
 
----
-
-<details>
-<summary>Canvas</summary>
-
-## Canvas
-
-The HTML `<canvas>` element is used to draw graphics on a web page.  
-The `<canvas>` element is only a container for graphics. You must use JavaScript to actually draw the graphics.
-
-```html index.html
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./styles.css" />
-	</head>
-	<body>
-		<h1 class="heading">Canvas</h1>
-		<canvas id="myCanvas"></canvas>
-		<script src="./App.js"></script>
-	</body>
-</html>
-```
-
-```css index.css
-.heading {
-	text-align: center;
-}
-
-#myCanvas {
-	width: 500px;
-	height: 500px;
-	border: 2px black solid;
-}
-```
-
-```js index.js
-let canvas = document.getElementById("myCanvas");
-console.log(canvas);
-
-let ctx = canvas.getContext("2d");
-ctx.fillStyle = "#FF0000";
-ctx.fillRect(0, 0, 150, 75);
+```html
+<button>Click</button>
 ```
 
 </details>
@@ -797,8 +766,8 @@ ctx.fillRect(0, 0, 150, 75);
 
 ### html
 
-The HTML element defines the root of an HTML document.  
-It is a container for all the other HTML elements.
+- The HTML element defines the root of an HTML document.
+- It is a container for all the other HTML elements.
 
 ```html index.html
 <!DOCTYPE html>
@@ -837,7 +806,7 @@ The HTML **style** element contains style information for an HTML document.
 ```html index.html
 <!DOCTYPE html>
 <html>
-<title>Document</title>
+	<title>Document</title>
 	<head>
 		<style>
 			h1 {
@@ -999,19 +968,6 @@ If present, it specifies that an input field must be filled out before submittin
 
 The HTML `span` element is an inline element, which should contain only other inline elements.
 `span` is an inline element and `p` is a block-level element, we can't use the `p` element inside a `span` element.
-
-</details>
-
----
-
-<details>
-<summary>General Information</summary>
-
-## General Information
-
-### Viewport
-
-**viewport** is the visible area of a web page that a user can see within their web browser window without scrolling.
 
 </details>
 
