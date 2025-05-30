@@ -53,8 +53,8 @@
 
 ### **HTML** Tags are two types
 
-1. **Container Tag** : It has startTag & endTag.
-2. **Empty Tag** : It doesn't have an end tag.
+1. **Container Tag** : It has startTag & endTag. -> It holds the content
+2. **Empty Tag** : It doesn't have an end tag. -> It doesn't hold any content
 
 - `Container Tag`
 
@@ -103,7 +103,7 @@ An **HTML** document consists of three parts :
 
 - Body tag is for **Client reading** purpose.
 - Here, we can Display content of the webpage.
-- It contains text content, headings, paragraphs, links, tables, forms, images, audios, videos, ...etc.
+- It contains text content, headings, paragraphs, links, lists, tables, forms, images, audios, videos, ...etc.
 
 ### Element Syntax
 
@@ -315,7 +315,7 @@ The HTML `<hr/>` element inserts a horizontal line and helps to separate the con
 ### Containers
 
 - The Container Elements are used to wrap a group of elements and apply CSS styles to many elements at once.
-- These container tags are used to divide smaller parts for understanding and applying css easily.
+- These container tags are used to divide a group of elements into smaller parts for better understanding.
 
 #### 1. Semantic Tags
 
@@ -328,7 +328,7 @@ The HTML `<hr/>` element inserts a horizontal line and helps to separate the con
 1. **Accessibility**
 
 - This is because screen readers and browsers can understand the code better.
-  We can use shortcuts to move different parts within the webpage.
+- We can use shortcuts to move different parts within the webpage.
 
 2. **Search Engine Optimization**
 
@@ -377,7 +377,7 @@ The HTML `<hr/>` element inserts a horizontal line and helps to separate the con
 </footer>
 ```
 
-### Non-Semantic Tags
+#### 2. Non-Semantic Tags
 
 - Non-semantic elements don't have the meaning.
 - They can contain anything.
@@ -397,21 +397,7 @@ The HTML `<hr/>` element inserts a horizontal line and helps to separate the con
 - content comes side by side.
 
 ```html
-<p>I am <span class="my-style">Ande Praveen</span></p>
-```
-
-### details
-
-- We can create accordion by using **details** tag.
-- It has two states:
-  1. open: We can see the additional information.
-  2. close: We can't see the additional information. We can see only the summary.
-
-```html
-<details>
-	<summary>Details</summary>
-	show Hidden Content by click on Details Summary.
-</details>
+<p>I am <span style="color:green;">Ande Praveen</span></p>
 ```
 
 </details>
@@ -463,9 +449,9 @@ It can contain zero or more source elements and one HTML img element.
 
 ```html
 <picture>
-	<source media="(min-width:650px)" srcset="image-1" />
-	<source media="(min-width:465px)" srcset="image-2" />
-	<img src="image-3" alt="I am image" />
+	<source media="(min-width:650px)" srcset="./image-1.jpg" type="image/jpeg" />
+	<source media="(min-width:465px)" srcset="./image-2.jpg" type="image/jpeg" />
+	<img src="image-3.jpg" alt="I am image" />
 </picture>
 ```
 
@@ -486,16 +472,16 @@ Video controls include:
 
 ```html
 <video controls>
-	<source src="movie.mp4" type="video/mp4" />
-	<source src="movie.webm" type="video/webm" />
-	<source src="movie.ogv" type="video/ogg" />
+	<source src="./movie.mp4" type="video/mp4" />
+	<source src="./movie.webm" type="video/webm" />
+	<source src="./movie.ogv" type="video/ogg" />
 	Your browser does not support the video tag.
 </video>
 ```
 
 - The HTML `source` element defines the media resource for the HTML video element.
-
-- The HTML `src` attribute specifies the URL/path of the media resource (e.g. video).
+- The HTML source element specifies multiple alternative media resources for HTML picture element or for media elements (audio, video, etc.).
+- The HTML `src` attribute specifies the URL/path of the media resource (e.g. movie).
 - The HTML `type` attribute specifies the type/format of the media resource(e.g. video/mp4)
 
 ### audio
@@ -511,8 +497,8 @@ Video controls include:
 ```
 
 - The HTML source element specifies multiple alternative media resources for HTML picture element or for media elements (audio, video, etc.).
-- It is commonly used to give the same media content in multiple file formats for providing compatibility across different browsers.
-- The HTML `src` attribute of the source element specifies the URL/path of the media resource.
+- The HTML `src` attribute specifies the URL/path of the media resource (e.g. horse).
+- The HTML `type` attribute specifies the type/format of the media resource(e.g. audio/mpeg)
 
 ### iframe
 
@@ -545,7 +531,6 @@ There are mainly two types of lists in HTML
 ### Ordered List
 
 - It is created using the `ol` element.
-- It is a collection of related items.
 - Ordered list follows the Sequence Order.
 
 ```html
@@ -561,7 +546,6 @@ There are mainly two types of lists in HTML
 ### Unordered List
 
 - It is created using the `ul` element.
-- It is a collection of related items.
 - Unordered list does not follow any Sequence Order.
 
 ```html
@@ -579,7 +563,6 @@ There are mainly two types of lists in HTML
 ---
 
 <details>
-
 <summary>Table</summary>
 
 ### Table
@@ -647,17 +630,16 @@ It contains different types of form elements:
 ### **Form** Example code
 
 ```html
-<form onSubmit="submitForm()">
+<form onSubmit="handleSubmitForm()">
 	<div>
-		<label>Enter your name: </label>
-		<input type="text" name="name" />
+		<label for="name">Enter your name: </label>
+		<input type="text" id="name" />
 	</div>
 	<div>
-		<label>Enter Mobile number </label>
-		<input type="number" name="mobile_no" />
+		<label for="mobileNumber">Enter Mobile number </label>
+		<input type="number" id="mobileNumber" />
 	</div>
 	<div>
-		<input type="submit" value="Submit" />
 		<button type="submit">submit</button>
 	</div>
 </form>
@@ -665,7 +647,7 @@ It contains different types of form elements:
 
 ### input
 
-`input` element creates interactive controls to accept the data from the user.
+`<input>` element creates interactive controls to accept the data from the user.
 
 Different types of inputs:
 
@@ -678,8 +660,8 @@ Different types of inputs:
 1. **Textbox & Password**
 
 ```html
-<input type="text" placeholder="text box" />
-<input type="password" placeholder="password box" />
+<input type="text" placeholder="Text Box" />
+<input type="password" placeholder="Password Box" />
 ```
 
 ### select
@@ -764,6 +746,14 @@ Different types of inputs:
 
 ## Important Elements
 
+1. html
+2. script
+3. style
+4. link
+5. pre
+6. code
+7. details
+
 ### html
 
 - The HTML element defines the root of an HTML document.
@@ -776,7 +766,7 @@ Different types of inputs:
 		Meta Data
 	</head>
 	<body>
-		<h1>Heading</h1>
+		<h1>I am Heading 1</h1>
 		<p>I am Paragraph</p>
 	</body>
 </html>
@@ -800,8 +790,8 @@ Different types of inputs:
 
 ### style
 
-The HTML **style** element to write the **css** code in the HTML file.
-The HTML **style** element contains style information for an HTML document.
+- The HTML **style** element to write the **css** code in the HTML file.
+- The HTML **style** element contains style information for an HTML document.
 
 ```html index.html
 <!DOCTYPE html>
@@ -818,7 +808,7 @@ The HTML **style** element contains style information for an HTML document.
 		</style>
 	</head>
 	<body>
-		<h1>Heading</h1>
+		<h1>I am Heading 1</h1>
 		<p>I am Paragraph</p>
 	</body>
 </html>
@@ -826,15 +816,15 @@ The HTML **style** element contains style information for an HTML document.
 
 ### HTML link element
 
-We use the HTML `link` element to link the CSS file to an HTML.
+- We use the HTML `link` element to link the External CSS file to an HTML.
 
 ```html
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="./myStyles.css" />
 ```
 
 ### pre
 
-The text will be displayed exactly as written in the HTML source code.
+- The text will be displayed exactly as written in the HTML source code.
 
 ```html
 <pre>
@@ -847,7 +837,7 @@ The text will be displayed exactly as written in the HTML source code.
 
 ### code
 
-The `<code>` tag is used to display a piece of code.
+- The `<code>` tag is used to display a piece of code.
 
 ```html
 <pre>
@@ -855,6 +845,20 @@ The `<code>` tag is used to display a piece of code.
         <h1>I am Heading Tag</h1>
     </code>
 </pre>
+```
+
+### details
+
+- We can create accordion by using **details** tag.
+- It has two states:
+  1. open: We can see the additional information.
+  2. close: We can't see the additional information. We can see only the summary.
+
+```html
+<details>
+	<summary>Details</summary>
+	show Hidden Content by click on Details Summary.
+</details>
 ```
 
 </details>
@@ -866,8 +870,8 @@ The `<code>` tag is used to display a piece of code.
 
 ## Attributes
 
-The HTML attributes provide additional information to the HTML element.
-we always mention attributes in start tag only.
+- The HTML attributes provide additional information to the HTML element.
+- we always mention attributes in startTag only.
 
 **syntax** : `attributeName="attributeValue"`
 
@@ -883,7 +887,7 @@ we always mention attributes in start tag only.
 
 ### id
 
-The HTML `id` attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+- The HTML `id` attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
 
 - It can be used for styling an HTML element using CSS.
 - It is also used by JavaScript to access and manipulate the HTML elements with the specific `id`.
@@ -895,9 +899,9 @@ The HTML `id` attribute specifies a unique id for an HTML element. The value of 
 
 ### class
 
-The HTML `class` attribute specifies a class name for an HTML element.  
-It is used to apply styles to multiple elements with the same class name.  
-One or more HTML elements can have the same class name.
+- The HTML `class` attribute specifies a class name for an HTML element.
+- It is used to apply styles to multiple elements with the same class name.
+- One or more HTML elements can have the same class name.
 
 ```html
 <h1 class="heading">Heading 1</h1>
@@ -906,14 +910,13 @@ One or more HTML elements can have the same class name.
 
 ### target
 
-we can use `target` attribute in HTML Anchor Element.  
-The HTML Anchor Element can be used to create the links on a web page.
+- we can use `target` attribute in HTML Anchor Element.
+- The HTML Anchor Element can be used to create the links on a web page.
 
 The HTML `target` Attribute specifies where to open the linked web resource.
 
-- **\_self** : (Default value) It opens the document in the same window or Same Tab.
+- **\_self** : (Default value) It opens the document in the same window or same tab.
 - **\_blank** : It opens the document in a new window or tab.
-- **\_parent** : It opens the document in a parent frame.
 
 ```html
 <a href="https://www.google.com" target="_blank">Google</a>
@@ -921,8 +924,8 @@ The HTML `target` Attribute specifies where to open the linked web resource.
 
 ### href
 
-The HTML **href** attribute is the most important attribute of the HTML anchor element.  
-The value of the HTML `href` attribute is URL/path of the page where the link goes to.
+- The HTML **href** attribute is the most important attribute of the HTML anchor element.
+- The value of the HTML `href` attribute is URL/path of the page where the link goes to.
 
 ```html
 <a href="https://www.google.com" target="_blank">Google</a>
@@ -936,13 +939,13 @@ The value of the HTML `href` attribute is URL/path of the page where the link go
 
 ### **required**
 
-The HTML `required` attribute is a boolean attribute.  
-If present, it specifies that an input field must be filled out before submitting the form.
+- The HTML `required` attribute is a boolean attribute.
+- If present, it specifies that an input field must be filled out before submitting the form.
 
 ```html
 <form>
 	<label for="username">Username</label>
-	<input type="text" id="username" name="username" required />
+	<input type="text" id="username" required />
 	<input type="submit" />
 </form>
 ```
@@ -966,8 +969,12 @@ If present, it specifies that an input field must be filled out before submittin
 
 ### Can we use the HTML `p` element inside an HTML `span` element?
 
-The HTML `span` element is an inline element, which should contain only other inline elements.
-`span` is an inline element and `p` is a block-level element, we can't use the `p` element inside a `span` element.
+- The HTML `span` element is an inline element, which should contain only other inline elements.
+- `span` is an inline element and `p` is a block-level element, we can't use the `p` element inside a `span` element.
+
+```html
+<span><p>I am Paragraph</p></span>
+```
 
 </details>
 
