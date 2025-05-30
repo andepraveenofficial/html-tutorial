@@ -1,0 +1,15 @@
+link
+=====
+link syntax
+------------
+<a href="linkAddress">linkName</a>
+-----------------------------------
+href => hyperlink reference
+-----------------------------------
+hyperlink is used to navigate directly to other page or specific part of the given page.
+=========================================================================================
+links are 2 types:
+-----------------
+1)internal link
+2)external link
+===================

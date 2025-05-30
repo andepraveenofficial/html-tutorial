@@ -1,0 +1,5 @@
+align
+====
+normal image take entire space of width of webpage.
+alignment image take only image width..next elements adjusting alignment leaved space. 
+=============================================

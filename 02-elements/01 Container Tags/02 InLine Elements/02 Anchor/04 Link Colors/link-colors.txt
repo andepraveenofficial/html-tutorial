@@ -1,0 +1,10 @@
+link :
+=======
+link colors are body attributes.
+---------------------------------
+body attributes
+----------------
+link => STANDARD link WITH ATTRIBUTE link
+vlink => VISITED link WITH ATTRIBUTE vlink
+alink => ACTIVE link WITH ATTRIBUTE alink
+================================================

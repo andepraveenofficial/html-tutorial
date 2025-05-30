@@ -1,0 +1,8 @@
+font container tag
+==================
+font attributes
+-----------------
+1)color
+2)face
+3)size
+=================

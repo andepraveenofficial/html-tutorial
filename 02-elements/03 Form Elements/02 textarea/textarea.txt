@@ -1,0 +1,5 @@
+textarea
+=========
+rows => number of rows 
+cols => number of characters
+==================

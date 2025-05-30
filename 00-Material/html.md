@@ -51,6 +51,8 @@
 - Tags tells the browser how to display text (like headings, paragraphs, links ...etc).
 - Tags are used as instructions for formatting content.
 
+![Basic Struture](./assets/02-basic-structure.PNG)
+
 ### **HTML** Tags are two types
 
 1. **Container Tag** : It has startTag & endTag. -> It holds the content
@@ -347,7 +349,7 @@ The HTML `<hr/>` element inserts a horizontal line and helps to separate the con
 6. **article**
 7. **footer**
 
-![Semantic vs Non-Semantic](./assets/02-Semantic-vs-non-semantic.png)
+![Semantic vs Non-Semantic](./assets/03-Semantic-vs-non-semantic.png)
 
 ```html
 <header>

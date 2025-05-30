@@ -1,0 +1,7 @@
+list :
+==========
+list is 2 types :
+------------------
+1) unordered list
+2) ordered list
+==============

@@ -1,0 +1,27 @@
+body{
+	font-family:Arial,sans-serif;
+}
+
+figure{
+	/*border:2px solid black;*/
+	width:300px;
+	text-align:center;
+	padding:5px;
+	margin:5px;
+	border-radius:10px;
+	display:inline-block;
+}
+
+figure img{
+	width:100%;
+	height:200px;
+	border-radius:10px;
+	box-shadow:0 0 10px black;
+}
+
+figure figcaption{
+	background-image:linear-gradient(45deg,lightgreen,yellow,pink,orange);
+	color:black;
+	box-shadow:0 0 10px black;
+}
+

@@ -1,0 +1,4 @@
+Object:
+---------
+object type : image/audio/video/pdf/html-file
+=======================
